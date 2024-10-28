@@ -1,0 +1,409 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 10vh;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+.menuicon {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./app/img/back.jpg");
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: monospace;
+  gap: 10px;
+}
+
+.heroSection h1 {
+  font-size: 5vw;
+}
+
+.heroSection p {
+  font-size: 3vw;
+}
+
+.heroSection button {
+  border: none;
+  background-color: rgba(0, 128, 0, 0.274);
+  padding: 20px 40px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+footer {
+  height: 35vh;
+  background-color: rgba(51, 128, 0, 0.808);
+  padding: 0px 10px;
+  color: #fff;
+}
+
+.icon {
+  display: flex;
+  width: 8%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.icon a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+
+.socail h3 {
+  margin: 10px 0px;
+  font-size: 25px;
+}
+
+p {
+  text-align: center;
+  color: black;
+}
+
+.me p {
+  justify-content: center;
+  color: black;
+}
+
+.me h1 {
+  color: black;
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 10vh;
+  align-items: center;
+}
+
+.fig {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+.fig {
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 10px;
+}
+figure {
+  border: 1px solid black;
+  margin: 10px;
+  width: 45%;
+  height: 45%;
+}
+figcaption {
+  padding: 15px 10px;
+}
+h4 {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.about {
+  text-align: center;
+  padding: 10px 20px;
+}
+.about h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.about section {
+  padding: 10px 20px;
+  display: flex;
+  height: 60vh;
+  justify-content: space-between;
+}
+
+.about section img {
+  height: 100%;
+  width: 45%;
+}
+.about section article {
+  width: 45%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about article p {
+  font-size: small;
+}
+.about article button {
+  background-color: blue;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  border: none;
+}
+
+.contact {
+  text-align: center;
+  font-size: 50px;
+}
+
+.contactAddress {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  margin-top: 50px;
+}
+
+.Address {
+  border: 1px solid black;
+  gap: 30px;
+  width: 45%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.Address a {
+  font-size: 20px;
+}
+
+form {
+  margin-left: 10px;
+  border: 1px solid black;
+  width: 45%;
+}
+
+.about,
+.cotact,
+.testimonial {
+  padding: 70px;
+}
+
+.testimonial {
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.testimonial figure {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  padding: 10px 0px;
+}
+.testifier {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.testimonial figcaption {
+  padding: 10px;
+  text-align: center;
+}
+
+.testimonial figcaption b {
+  margin: 10px 0px;
+  font-size: 18px;
+}
+.testimonial figcaption p {
+  text-align: start;
+}
+
+.sponsors h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(16, 15, 15);
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: #8c8d9b;
+}
+
+.sponsors img {
+  height: 150px;
+  width: 250px;
+  border-radius: 15%;
+  padding: 10px;
+}
+
+@media only screen and(max-width:1000px) {
+  .about,
+  .services {
+    padding: 70px 20px;
+  }
+
+  .Address a {
+    font-size: 15px;
+  }
+}
+.about section {
+  height: 70vh;
+}
+
+.about article {
+  width: 50%;
+  font-size: 15px;
+}
+
+.secondpara {
+  display: none;
+}
+
+.fig figure {
+  height: 80vh;
+  font-size: 15px;
+  width: 45%;
+}
+
+.fig {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .about section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    height: fit-content;
+  }
+
+  .about section img {
+    width: 100%;
+  }
+
+  .about section article {
+    width: 100%;
+    gap: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menuicon {
+    display: block;
+    font-size: 20px;
+  }
+  .fig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fig figure {
+    width: 90%;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-top: 1rem;
+  }
+  .contactAddress {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100vh;
+  }
+  .Address {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 60vh;
+    font-size: large;
+    gap: 10px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact form input {
+    width: 200px;
+    border-radius: 10px;
+    padding: 1px;
+    border: none;
+    background-color: #ebebf0;
+  }
+  .contact button {
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    font-size: small;
+    margin-top: 0;
+  }
+  .testimonial figure {
+    width: 100%;
+  }
+  .sponsors {
+    margin-top: 5rem;
+  }
+}
